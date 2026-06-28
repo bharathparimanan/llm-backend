@@ -1,0 +1,36 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+
+# ── AI provider ───────────────────────────────────────────────────────────────
+openai==1.59.3
+
+# ── Token counting ────────────────────────────────────────────────────────────
+tiktoken==0.8.0
+
+# ── HTTP client (used by OpenAI SDK and direct calls) ─────────────────────────
+httpx==0.28.1
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.25.0
+pytest-cov==6.0.0
+
+# ── Code quality ──────────────────────────────────────────────────────────────
+ruff==0.9.0
+mypy==1.14.0
+
+# FUTURE UPGRADE:
+# sqlalchemy[asyncio]==2.x     — async ORM when database persistence is introduced
+# alembic==1.x                 — schema migrations managed alongside the ORM
+# redis==5.x                   — distributed cache and session store
+# aioredis==2.x                — async Redis client
+# langchain==0.x               — orchestration framework (Module 3+)
+# langgraph==0.x               — graph-based agent orchestration (Module 5+)
+# litellm==1.x                 — multi-provider LLM abstraction (Module 2+)
+# ragas==0.x                   — RAG evaluation framework (Module 4+)
